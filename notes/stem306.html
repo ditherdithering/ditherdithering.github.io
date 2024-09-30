@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <a href="../index.html">Return back</a>
+        <h2>Requirements</h2>
+        <ul>
+            <li>Notebook & Pen</li>
+            <li>Sci Calc</li>
+        </ul>
+        
+        <h2>Units</h2>
+        <p><u>m</u>icro or \(\mu = 1 \cdot 10^{-6}\)</p>
+        <p><u>n</u>ano = \(n = 1 \cdot 10^{-9}\)</p>
+        <p>E = electric field</p>
+        <p>\(A_{\text{circle}} = 4\pi r^2\)</p>
+        <p>\(V_{\text{sphere}} = \frac{4}{3}\pi r^3\)</p>
+        
+        <h2>Notes</h2>
+        
+        <h3>Vectors</h3>
+        <ul>
+            <li>Components
+                <ul>
+                    <li>x-component</li>
+                    <li>y-component</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h4>Example</h4>
+        <p>\[
+        \theta = 38°, \quad A_h/A = 5.7
+        \]</p>
+        <p>\[
+        A_x =?
+        \]</p>
+        <p>\[
+        A_x = \sin\theta = \frac{o}{h}, \quad \sin38° = \frac{A_x}{A}
+        \]</p>
+        <p>\[
+        A(\sin38°) = \left(\frac{A_x}{A}\right)A, \quad A\sin38° = A_x
+        \]</p>
+        
+        <h4>Resultant</h4>
+        <p>\[
+        R_x = A_x + B_x
+        \]</p>
+        <p>\[
+        R^2 = R_x^2 + R_y^2
+        \]</p>
+        <p>\[
+        \theta = \sin^{-1}\left(\frac{o}{h}\right), \text{v.v.}
+        \]</p>
+        <p>\[
+        R = \left([R^2 = R^2_x + R^2_y], [\theta = \tan^{-1}\left(\frac{R_y}{R_x}\right)], \text{direction}\right)
+        \]</p>
+        
+        <p>NORTH, EAST -> +<br>
+        SOUTH, WEST -> -</p>
+        
+        <h3>Electrostatics — Coulomb's Law</h3>
+        <p>Study of stationary <a href="#Electric-Charge">electro charges</a></p>
+        
+        <h4>Electric Charge</h4>
+        <p>represented by q</p>
+        <p>Physical property of an object that causes it to be attracted/repelled towards another charged object, the force is called the electromagnetic force.</p>
+        <p>Can be + (proton) or - (electron)</p>
+        <p>SI Unit -> C(oulomb) by Charles-Augustin de Coulomb</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Subatomic Particle</th>
+                    <th>Location</th>
+                    <th>Mass</th>
+                    <th>Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Proton</td>
+                    <td>Inside Nucleus</td>
+                    <td>\(1.673 \cdot 10^{-27}kg\)</td>
+                    <td>e</td>
+                </tr>
+                <tr>
+                    <td>Neutron</td>
+                    <td>Inside Nucleus</td>
+                    <td>\(1.675 \cdot 10^{-27}kg\)</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Electron</td>
+                    <td>Around Nucleus</td>
+                    <td>\(9.109 \cdot 10^{-31}kg\)</td>
+                    <td>e</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h5>Elementary Charge</h5>
+        <p>represented by e</p>
+        <p>Electric charge carried by a proton or electron, physical constant (\(1.60 \times 10^{-19}\))</p>
+        <p>proton -> +e<br>
+        electron -> -e</p>
+        
+        <h4>Coulomb's Law</h4>
+        <p>Main idea -> strength of the force of attraction/repulsion between charges</p>
+        <p>\[
+        F = \frac{k|q_1q_2|}{r^2} \quad \text{or}
+        \]</p>
+        <p>\[
+        F = k\frac{|q_1q_2|}{r^2}, \text{where}
+        \]</p>
+        <p>F = electrostatic force in N, can be positive or negative since it’s a vector</p>
+        <p>\[
+        k = \text{Coulomb's constant}, \quad k = 9 \cdot 10^9N\cdot \frac{m^2}{C^2}
+        \]</p>
+        <p>\[
+        r = \text{distance between the charges in m}
+        \]</p>
+        <p>\[
+        q_{1,2} = \text{charges in C}
+        \]</p>
+        <p>\[
+        F_{12} = F_{21}
+        \]</p>
+        
+        <h5>Example</h5>
+        <p>Given:</p>
+        <p>\[
+        q_1 = -25nC
+        \]</p>
+        <p>\[
+        q_2 = 15nC
+        \]</p>
+        <p>\[
+        r = 0.02m
+        \]</p>
+        <h4>Superposition Principle</h4>
+        <ul>
+            <li>Each charge exerts a force on another charge such that there are no other forces</li>
+            <li>The total force is the vector sum</li>
+        </ul>
+
+        <h5>Examples</h5>
+        <p>\[
+        q_1 = 2\mu C(-0.1, 0),\hspace{0.2em} q_2 = 3\mu C(0, 0), \hspace{0.2em} q_3 = -5\mu C(0.3, 0)
+        \]</p>
+        <p>\[
+        \vec{F}(q_2) = \text{?}
+        \]</p>
+        <p>\[
+        \vec{F}_{12} = 9\cdot 10^9\frac{|(2 \cdot 10^{-6})(3 \cdot 10^{-6})|}{(0.1)^2}
+        \]</p>
+        <p>\[
+        \vec{F}_{12} = 5.4N \hspace{0.2em}\text{left}
+        \]</p>
+        <p>\[
+        \vec{F}_{23} = 9\cdot 10^9\frac{|(3 \cdot 10^{-6})(5 \cdot 10^{-6})|}{(0.3)^2}
+        \]</p>
+        <p>\[
+        \vec{F}_{23} = 1.5N \hspace{0.2em}\text{right}
+        \]</p>
+        <p>\[
+        F_2 = F_{12} + F_{23}
+        \]</p>
+        <p>\[
+        F_2 = -5.4N + 1.5N
+        \]</p>
+        <p>\[
+        F_2 = -3.9N \hspace{0.2em} \text{left}
+        \]</p>
+
+        <h5>Example 2</h5>
+        <p>\[
+        q_1 = 2\mu C (0, 0.3), \hspace{0.2em} q_2 = -3\mu C (0, 0), \hspace{0.2em} q_3 = 5\mu C (0.1, 0.2)
+        \]</p>
+        <p>\[
+        \vec{F}_2 = \hspace{0.2em} ?
+        \]</p>
+        <p>\[
+        F_{21} = k\frac{|(q_2)(q_1)|}{r^2}
+        \]</p>
+        <p>\[
+        F_{21} = 9 \cdot 10^9\frac{|(-3 \cdot 10^{-6})(2 \cdot 10^{-6})|}{(0.3)^2}
+        \]</p>
+        <p>\[
+        F_{21} = 0.6N
+        \]</p>
+        <p>\[
+        r_{23} = \sqrt{x^2_3 + y^2_3}
+        \]</p>
+        <p>\[
+        r_{23} = \sqrt{0.1^2 + 0.2^2}
+        \]</p>
+        <p>\[
+        r_{23} = 0.22m
+        \]</p>
+        <p>\[
+        \theta = \tan^{-1}\left(\frac{y_3}{x_3}\right)
+        \]</p>
+        <p>\[
+        \theta = 63.43°
+        \]</p>
+        <p>\[
+        F_{23} = 9 \cdot 10^9\frac{|(-3 \cdot 10^{-6})(5 \cdot 10^{-6})|}{(0.22)^2}
+        \]</p>
+        <p>\[
+        F_{23} = 2.79N
+        \]</p>
+        <p>\[
+        F_{23x} =F_{23} \hspace{0.2em} \text{cos}\theta
+        \]</p>
+        <p>\[
+        F_{23x} = 2.79\hspace{0.2em} \text{cos}63.43
+        \]</p>
+        <p>\[
+        F_{23x} = 1.25N
+        \]</p>
+        <p>\[
+        F_{12y} = F_{12} \hspace{0.2em} \text{sin}\theta
+        \]</p>
+        <p>\[
+        F_{12y} = 0.6 \hspace{0.2em} \text{sin}90 = 0.6N
+        \]</p>
+        <p>\[
+        F_{23y} = F_{23} \hspace{0.2em} \text{sin}\theta = 2.79 \hspace{0.2em} \text{sin}63.43 = 2.5N
+        \]</p>
+        <p>\[
+        F_y = F_{12y} + F_{23y} = 0.6N + 2.5N = 3.1N
+        \]</p>
+        <p>\[
+        F_{q2} = \sqrt{F^2_x + F^2_y} = \sqrt{(1.25)^2 + (3.1)^2} = 3.34N
+        \]</p>
+        <p>\[
+        \theta = \sin^{-1}\left(\frac{F_y}{F_{q2}}\right) = \sin^{-1}\left(\frac{3.1N}{3.34N}\right) = 68.15°
+        \]</p>
+        <p>\[
+        \theta = \cos^{-1}\left(\frac{F_x}{F_{q2}}\right) = \cos^{-1}\left(\frac{1.25N}{3.34N}\right) = 68.02°
+        \]</p>
+        <p>\[
+        \theta = \tan^{-1}\left(\frac{F_y}{F_x}\right) = \tan^{-1}\left(\frac{3.1N}{1.25N}\right) = 68.04°
+        \]</p>
+
+        <h5>Example 3</h5>
+        <p>\[
+        q_1 = +1.2\mu C (0,0), \hspace{0.2em} q_2 = -0.6\mu C (1.2, 0.5), \hspace{0.2em} q_3 = +0.2\mu C (1.2, 0)
+        \]</p>
+        <p>\[
+        \vec{F}(q_3) = \text{?}
+        \]</p>
+        <p>\[
+        \vec{F}_{31} = k\frac{|q_3q_1|}{r^2_{31}}
+        \]</p>
+        <p>\[
+        \vec{F}_{31} = 9\cdot 10^9\frac{|(2 \cdot 10^{-7})(1.2 \cdot 10^{-6})|}{(1.2)^2}
+        \]</p>
+        <p>\[
+        \vec{F}_{31} = 1.5 \cdot 10^{-3}
+        \]</p>
+        <p>\[
+        \vec{F}_{23} = k\frac{|q_2q_3|}{r^2_{23}}
+        \]</p>
+        <p>\[
+        \vec{F}_{23} = 9\cdot 10^9\frac{|(6 \cdot 10^{-7})(2 \cdot 10^{-7})|}{(0.5)^2}
+        \]</p>
+        <p>\[
+        \vec{F}_{23} = 4.32 \cdot 10^{-3}
+        \]</p>
+
+        <h3>Electric Field</h3>
+        <p>Main idea -> charged object surrounded by an electric field where another charged object will experience an electric force</p>
+        <p>\[
+        F_e = E|q|
+        \]</p>
+
+        <h4>Concepts</h4>
+        <ul>
+            <li>Space surrounding a charged body is an electric field</li>
+            <li>Any charged particle placed in it experiences an electric force</li>
+            <li>Every charge has an electric field</li>
+        </ul>
+
+        <h4>Electric Lines of Force</h4>
+        <p>Discovered by Michael Faraday</p>
+        <p>Maps out an electric field</p>
+        <ul>
+            <li>Starts from + charged particles and end on - charged particles or continue towards \(\infty\)</li>
+            <li>Neither can intersect nor break</li>
+            <li>The greater the number of lines of force, the stronger the field</li>
+            <li>Represented by E</li>
+        </ul>
+
+        <p>\[
+        F = \frac{kq}{r^2}
+        \]</p>
+
+        <h4>Examples</h4>
+        <p>E = 5N/C downward</p>
+        <p>q = \(1.6 \cdot 10^{-19}\) C</p>
+        <p>\[
+        m_e = 9.11 \cdot 10^{-31} \, \text{kg}
+        \]</p>
+        <p>acceleration?</p>
+        <p>force?</p>
+        <p>\[
+        F_e = E|q|
+        \]</p>
+        <p>\[
+        F_e = (5N/C)(|-1.6 \cdot 10^{-19}|)
+        \]</p>
+        <p>\[
+        F_e = 8 \cdot 10^{-19}
+        \]</p>
+        <p>\[
+        F = ma \quad \text{(use 2nd law of motion)}
+        \]</p>
+        <p>\[
+        a = \frac{F}{m} = \frac{8 \cdot 10^{-19}}{9.11 \cdot 10^{-31}} = 8.7815587 \cdot 10^{11} \approx 8.78 \, \text{m/s}^2
+        \]</p>
+
+        <h4>Electric Field in Conductor</h4>
+        <ul>
+            <li>Discovered by Faraday, the electric field is 0 inside a closed conducting surface; excess charge is applied on a conductor's surface</li>
+            <li>Example: Faraday's cage</li>
+            <ul>
+                <li>Any closed conducting surface is a Faraday cage</li>
+            </ul>
+        </ul>
+
+        <h4>Electric Flux</h4>
+        <p>Flow in Latin, a measure of field lines passing through a surface</p>
+        <p>Unit = Φ</p>
+        <p>Dot product of E and A</p>
+        <p>\[
+        \Phi = E \cdot A = EA \hspace{0.2em} \text{cos}\theta
+        \]</p>
+        <p>Where θ is the angle between E and A</p>
+        <p>Note that Φ is scalar with the unit Nm²/C</p>
+
+        <h5>Example</h5>
+        <p>A = 1.25m²</p>
+        <p>E = 5 N/C along the x-axis</p>
+        <p>Φ = ?</p>
+        <p>Parallel?</p>
+        <p>Perpendicular?</p>
+
+        <p>(a) If parallel, θ = 90, since \(\cos(90) = 0\), \(\therefore \Phi = 0 \, \text{Nm}^2/\text{C}\)</p>
+        <p>(b) If perpendicular, θ = 0, \(\therefore\):</p>
+        <p>\[
+        \Phi = (5)(1.25) \cos(0)
+        \]</p>
+        <p>\[
+        \Phi = 6.25 \, \text{Nm}^2/\text{C}
+        \]</p>
+
+        <h4>Gauss' Law</h4>
+        <p>Founded by Karl Friedrich Gauss, this law connects flux and electric charge</p>
+        <p>\[
+        \Phi_{\text{total}} = EA \cos\theta = \frac{q_{\text{total}}}{\epsilon_0}
+        \]</p>
+        <p>The surface (angled vector and E) is called a Gaussian surface</p>
+
+        <h5>Charge Distribution</h5>
+        <p>Gauss' law can be used to compute E due to point charges and continuous charge distributions</p>
+        <p>It must be uniform & symmetrical</p>
+        <p>It can be expressed in linear, surface, or charge density</p>
+
+        <h6>Linear Charge Density λ</h6>
+        <p>\[
+        \lambda = \frac{q}{l} \, \text{C/m}, \text{where l = length}
+        \]</p>
+
+        <h6>Surface Charge Density σ</h6>
+        <p>\[
+        \sigma = \frac{q}{A} \, \text{C/m}^2, \text{where A = area}
+        \]</p>
+
+        <h6>Volume Charge Density ρ</h6>
+        <p>\[
+        \rho = \frac{q}{V} \, \text{C/m}^3, \text{where V = volume}
+        \]</p>
+
+        <h5>Example</h5>
+        <p>r = 50cm = 0.5m</p>
+        <p>q = 150nC = \(150 \cdot 10^{-9} \, \text{C}\)</p>
+        <p>Sphere</p>
+        <p>(a) \(\rho = \frac{q}{V} = \frac{150 \cdot 10^{-9}}{\frac{4}{3}\pi(0.5)^3} = 2.86 \cdot 10^{-7}\)</p>
+        <p>(b) Since θ = 0:</p>
+        <p>\[
+        r_1 = 10 \, \text{cm}
+        \]</p>
+        <p>\[
+        E_1 = \frac{q_{\text{total}}}{\epsilon_0A} = \frac{\rho V}{\epsilon_0 4\pi r^2_1} = \frac{\rho \frac{4}{3}\pi r^3_1}{\epsilon_0 4\pi r^2_1} = \frac{\rho r_1}{3\epsilon_0}
+        \]</p>
+        <p>Since \(q_{\text{total}}\) is unknown at 10cm:</p>
+        <p>\[
+        E_1 = \frac{(2.86\cdot 10^{-7})(0.1)}{3(\epsilon_0)} = 1079.02 \, \text{N/C}
+        \]</p>
+        <p>(c) \(r_2 = 65cm\)</p>
+        <p>\[
+        E_2 = \frac{q_{\text{total}}}{\epsilon_0 4\pi r^2_2}
+        \]</p>
+        <p>\[
+        E_2 = \frac{150 \cdot 10^{-9}}{\epsilon_0 4\pi(0.65)^2} = 3190.85 \, \text{N/C}
+        \]</p>
+        <p>(b) In a conductor, charges reside at surface area, if \(r = 0.1m\), \(\therefore q_{\text{total}} = 0\), \(E = 0\)</p>
+
+        <h5>Other Forms of \(\Phi_{\text{total}}\)</h5>
+        <p>\[
+        E = \frac{q_{\text{total}}}{A\epsilon_0}, \text{since} \cos(0) = 1 \, \text{(don’t include)}
+        \]</p>
+    </body>
+</html>
