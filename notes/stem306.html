@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="../css/common.css">
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <a href="../index.html">Return back</a>
@@ -414,5 +416,139 @@
         <p>\[
         E = \frac{q_{\text{total}}}{A\epsilon_0}, \text{since} \cos(0) = 1 \, \text{(don’t include)}
         \]</p>
+        <h3>Electrodynamics</h3>
+        <h4>Current \( (I) \)</h4>
+        <p>amount of charge passing through at any point in a conductor per unit time</p>
+        <p>\( I = \frac{Q}{t} \), where:</p>
+        <ul>
+            <li>Q = charge in Coulomb</li>
+            <li>t = time in seconds</li>
+            <li>1 C/s AKA 1 Ampere
+                <ul>
+                    <li>Named by André Marie Ampère</li>
+                    <li>considered as Issac Newton of Electricity</li>
+                    <li>First to describe current</li>
+                    <li>Founded Electrodynamics</li>
+                </ul>
+            </li>
+            <li>Solve for C if it's unknown:
+                <ul>
+                    <li>\( Q = It \)</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Differences</h5>
+        <p>Benjamin Franklin introduced the term + and - charges, defining the electric current as the flow of +charges from the +terminal to the -terminal of the voltage source, referred to as conventional current.</p>
+        <p>During the discovery of \( e \), it became clear that the current in a metallic conductor is a flow of \( e \) from the -terminal to the +terminal, referred to as electron current.</p>
+        <ul>
+            <li>Also known as an equivalence of the Conventional Current, just as flowing in the opposite direction.</li>
+        </ul>
+        <p>\( \therefore \) most scientific literature uses conventional current</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Conventional Current</th>
+                    <th>Electron Current</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Positive -&gt; Negative</td>
+                    <td>Negative -&gt; Positive</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Differences for DC &amp; AC</h5>
+        <table>
+            <thead>
+                <tr>
+                    <th>Direct Current</th>
+                    <th>Alternating Current</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>One direction at all times</td>
+                    <td>Changes direction at an interval</td>
+                    <td>In the Philippines, the regular interval is 60 per second.</td>
+                </tr>
+                <tr>
+                    <td>Straight only in + or -.</td>
+                    <td>Oscillates between + and -.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Supplied by Cells or Batteries, common in Phones and Calculators.</td>
+                    <td>Produced by AC generators, and distributed by electric companies. Used in households.</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Resistance \( (R) \) or \( (\Omega) \)</h4>
+        <p>opposition of a material to the flow's <a href="#Current-$(I)$">Ampere</a></p>
+        <ul>
+            <li>\( R = \frac{V}{I} \)</li>
+            <li>SI -&gt; Ohm \( (\Omega) \)
+                <ul>
+                    <li>Named after George Simon Ohm</li>
+                </ul>
+            </li>
+            <li>Also known as <a href="#Ohms-law">Ohm's law</a></li>
+        </ul>
+        <p>Most devices have a resistor to regulate resistance</p>
+        <h5>Types</h5>
+        <ul>
+            <li>Metallized Film Resistor</li>
+            <li>Carbon Resistor</li>
+            <li>Thermistor</li>
+            <li>Potentiometer</li>
+        </ul>
+        <h4>Electromotive Force &amp; Potential Difference</h4>
+        <ul>
+            <li>the electrical <em>potential difference (PD)/potential</em> is the difference in potential energy per unit charge between 2 points.</li>
+            <li>the PD across its terminals when no current is flowing is called <strong>Electromotive Force.</strong></li>
+            <li>the PD across the terminals of a cell when current flows through is called <strong>Terminal Voltage.</strong></li>
+            <li>the PD must be supplied to get a current along a wire.
+                <ul>
+                    <li>Sources:
+                        <ul>
+                            <li>Batteries</li>
+                            <li>Solar/Fuel Cells</li>
+                            <li>Generators</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Voltage \( (V) \)</h4>
+        <p>unit of <a href="#Electromotive-Force-Potential-Difference">PD</a></p>
+        <h4>Electric Power \( (W \, \text{or} \, J/s) \) &amp; Energy \( (J, Ws \, \text{or} \, kWh) \)</h4>
+        <ul>
+            <li>Power expended from appliances is the rate of energy consumption.</li>
+            <li>\( P = VI \)</li>
+            <li>Can also be expressed in terms of \( \Omega \).
+                <ul>
+                    <li>\( P = VI = I^2R = \frac{V^2}{R} \)
+                        <ul>
+                            <li>\( I^2R \) in terms of V.</li>
+                            <li>\( \frac{V^2}{R} \) in terms of \( I \).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Energy is determined by the rate and time.</li>
+            <li>Electric Energy Consumption (EEC):
+                <ul>
+                    <li>EEC = Pt = J or Ws/kWh</li>
+                </ul>
+            </li>
+            <li>EEC with cost:
+                <ul>
+                    <li>Cost = Pt \( \left( \frac{\text{price}}{\text{kWh}} \right) \)</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Ohm's law</h3>
     </body>
 </html>
