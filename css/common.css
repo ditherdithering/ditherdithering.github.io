@@ -1,5 +1,45 @@
+:root {
+/* COLOUR PALETTES */
+    --very-dark-green: #0A3129;
+    --dark-green: #0F4E41;
+    --dark-mid-green: #105648;
+    --mid-green: #125F4F; /* MAIN COLOUR */
+    --light-mid-green: #79A68A;
+    --light-green: #85AE95;
+    --very-light-green: #B3CDBE;
+/* COLOUR PALETTE END */
+}
+
+.div-spacing-1 {
+    margin-top: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--dark-green);
+    border-radius: 15px;
+}
+body, h1 {
+    text-align: center;
+    color: white;
+}
+a, a:link, a:visited {
+    color: white;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+
+}
+
+ul, li {
+    list-style-position: inside;
+}
+
+ul {
+    padding-left: 0;
+}
 table, tr, td, th {
-    border: 3px solid black
+    border: 2px solid black
 }
 hr {
     display: block;
