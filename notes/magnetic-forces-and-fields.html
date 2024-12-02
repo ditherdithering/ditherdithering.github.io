@@ -1,0 +1,194 @@
+|<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/common.css">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <a href="../index.html">Return back</a>
+        <h2>Magnetic Field</h2>
+        <p>
+        A region of space with the ability to exert a magnetic force on dipoles and moving electric charges (\( e^- \)).
+        </p>
+        <p>
+        Exists around permanent magnets, current-carrying conductors, and other magnetic materials.
+        </p>
+
+        <h2>Magnetic Force on Moving Charges</h2>
+
+        <h3>Equations</h3>
+        <p>
+        \[
+        F = qv \cdot B
+        \]
+        where:
+        </p>
+        <ul>
+        <li>\( F = \text{the force on a charged particle}, \neq 0 \)</li>
+        <li>\( q = \text{electric charge} \)</li>
+        <li>\( v = \text{velocity of the electric charge, must have a value} \)</li>
+        <li>\( B = \text{magnetic field} \)</li>
+        <li>\( v \cdot B \neq 0 \)</li>
+        </ul>
+        <p>
+        \[
+        F = q \cdot vB \sin \theta, \hspace{0.3em} B = \frac{F}{qv \sin \theta}
+        \]
+        </p>
+        <ul>
+        <li>\( \theta = \text{smaller angle between} \hspace{0.3em} v \hspace{0.3em} \text{and} \hspace{0.3em} B \)</li>
+        </ul>
+        <p>
+        The SI unit of \( B \) is:
+        \[
+        1 \, T \, (\text{tesla}) = 1 \, \text{N}/(\text{C} \, \text{m/s}) = 1 \, \text{N}/\text{A} \, \text{m}
+        \]
+        </p>
+        <p>
+        Alternatively:
+        \[
+        1 \, G \, (\text{gauss}) = 1 \cdot 10^{-4} \, T
+        \]
+        </p>
+
+        <h3>Description</h3>
+        <p>
+        The direction of the magnetic field is the direction of the north pole.
+        </p>
+        <p>
+        The direction of the cross product can be determined using the right-hand rule.
+        </p>
+
+        <h2>Magnetic Force on a Current-Carrying Wire</h2>
+        <p>
+        \[
+        \Sigma q_v = nV, \hspace{1.25em} \text{total number of moving charges}
+        \]
+        </p>
+        <p>
+        \[
+        V = AL, \hspace{0.3em} \therefore \Sigma q_v = nAL
+        \]
+        </p>
+        <p>
+        \[
+        F = nALqv \, B \, \sin \theta
+        \]
+        </p>
+        <p>
+        Where:
+        <ul>
+            <li>\( nALq = q \)</li>
+            <li>\( v = \frac{L}{t}, \hspace{0.3em} \therefore \)</li>
+        </ul>
+        </p>
+        <p>
+        \[
+        F = \frac{q}{t}LB \sin \theta = F = ILB \sin \theta
+        \]
+        </p>
+        <p>
+        A current-carrying wire can also produce its magnetic field, which can be determined with:
+        </p>
+        <ul>
+        <li>Biot-Savart's Law -> AC</li>
+        <li><b>Ampere's Law</b> -> DC</li>
+        </ul>
+
+        <h2>Ampere's Law</h2>
+        <p>
+        Coined by André-Marie Ampère:
+        \[
+        \int B \cdot dl = \mu_0 I
+        \]
+        </p>
+        <p>
+        \[
+        \sum B_i \cdot L_i = \sum B_iL_i \cos \theta_i = \mu_0 I
+        \]
+        </p>
+        <p>
+        Where:
+        </p>
+        <ul>
+        <li>\( \sum B_i \cdot L_i \): summation of the magnetic field times the length \( i \) times</li>
+        <li>\( \sum B_iL_i \cos \theta_i \): summation of the magnetic field times the length with a cosine angle \( i \) times</li>
+        <li>\( \mu_0I \): the equation where \( \mu_0 \) (or \( \epsilon_0 \) in some calculators) is the permeability of a vacuum</li>
+        </ul>
+        <p>
+        \( \mu_0 = 4\pi \cdot 10^{-7} \, \text{Tm/A} \)
+        </p>
+        <ul>
+        <li>Relates to currents and magnetic fields they generate</li>
+        <li>Its counterpart is <a href="stem306.html#gauss-law">Gauss' Law</a></li>
+        <li>Uses an arbitrary surface and the closed loop that forms its boundary, called the <b>Amperian Loop</b></li>
+        </ul>
+
+        <h3>Applications</h3>
+
+        <h4>Magnetic Field on a Long Straight Wire Carrying a Current</h4>
+        <p>
+        \[
+        B = \frac{\mu_0 I}{L} = \frac{\mu_0 I}{2 \pi r}
+        \]
+        </p>
+        <p>
+        Note that the length turns into the circumference of the circle as the magnetic field creates a circular field, due to the wire being straight.
+        </p>
+
+        <h4>Magnetic Force Between Two Long Parallel Wires</h4>
+        <p>
+        Main equations: <a href="#magnetic-force-on-a-current-carrying-wire">Magnetic Force on a Current-Carrying Wire</a> & <a href="#magnetic-field-on-a-long-straight-wire-carrying-a-current">Magnetic Field on a Long Straight Wire Carrying a Current</a>
+        </p>
+        <p>
+        \[
+        F = ILB \sin \theta
+        \]
+        \[
+        B = \frac{\mu_0 I}{2 \pi r}
+        \]
+        </p>
+        <p>
+        The force of two parallel wires depends on these two factors:
+        </p>
+        <ul>
+        <li>They attract if they're parallel, repel if not.</li>
+        </ul>
+
+        <h4>Magnetic Field in a Loop of Wire</h4>
+        <p>
+        \[
+        B = \frac{\mu_0 NI}{2R}
+        \]
+        </p>
+        <p>
+        Where \( N \): number of turns from the loop/solenoid/toroid.
+        </p>
+
+        <h4>Magnetic Field in a Solenoid</h4>
+        <p>
+        Solenoid: a long coil of wire. If tightly wrapped, the magnetic field in its interior is almost uniform.
+        </p>
+        <p>
+        \[
+        B = \frac{\mu_0 NI}{L}
+        \]
+        </p>
+
+        <h4>Magnetic Field in a Toroid</h4>
+        <p>
+        Toroid: a long coil of wire bent into the shape of a torus (donut).
+        </p>
+        <p>
+        \[
+        B = \frac{\mu_0 NI}{2 \pi r}
+        \]
+        </p>
+
+        <p>
+        <a href="Magnetic Forces & Fields Examples.html">Examples</a>
+        </p>
+
+    </body>
+</html>

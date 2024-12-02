@@ -1,0 +1,100 @@
+|<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/common.css">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <a href="../index.html">Return back</a>
+        <h2>Electric Circuit</h2>
+        <p>
+          A group of electrical components connected together to form a complete path for current.
+        </p>
+        <p>
+          The circuit where current flows in one direction is called DC circuit (DCC).
+        </p>
+        <p>
+          In DCC, it is the battery or the DC generator that supplies the voltage.
+        </p>
+        
+        <h2>Series & Parallel Circuits</h2>
+        <p>
+          A circuit may be connected in series, parallel, or both.
+        </p>
+        <p>
+          Circuit diagrams may be used to analyze VIR.
+        </p>
+        <p>
+          In any combination of resistors, there is always a single equivalent resistor that can replace the combination without altering 
+          \( I_{\text{total}} \) and potential difference or \( V \).
+        </p>
+        <ul>
+          <li>Where 10Ω = 5Ω + 5Ω.</li>
+        </ul>
+        
+        <h3>Series Circuits</h3>
+        <p>
+          Contains more than one electrical component connected one after the other in a single path.
+        </p>
+        <p>
+          \( V^+ \to R_1 \to R_2 \to R_3 \to V^- \)
+        </p>
+        
+        <h4>Properties</h4>
+        <ul>
+          <li>\( R_{\text{total}} = \Sigma R \) on the current circuit</li>
+          <li>The current is constant/same in all parts.</li>
+          <li>The voltage is distributed in all parts of a circuit.</li>
+        </ul>
+        
+        <h3>Parallel Circuits</h3>
+        <p>
+          Contains two or more electrical components connected across each other.
+        </p>
+        <p>
+          If one fails, the current still flows through as the components are independent.
+        </p>
+        <p>
+          Commonly found in household appliances.
+        </p>
+        
+        <h4>Properties</h4>
+        <ul>
+          <li>\( R_t = \frac{1}{R_t} = \frac{1}{R_n} \)</li>
+          <li>The current is distributed in all parts of a circuit.</li>
+          <li>The voltage is constant/same in all parts.</li>
+        </ul>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Quantity</th>
+              <th>Series Resistors</th>
+              <th>Parallel Resistors</th>
+              <th>General</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I</td>
+              <td>\( I = I_1 = I_n \)</td>
+              <td>\( I = I_1 + I_n \)</td>
+              <td>\( I = \frac{V}{T} \)</td>
+            </tr>
+            <tr>
+              <td>V</td>
+              <td>\( V = V_1 + V_n \)</td>
+              <td>\( V = V_1 = V_n \)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>\( R_{\text{total}} \)</td>
+              <td>\( R_{\text{total}} = R_1 + R_n \)</td>
+              <td>\( \frac{1}{R_{\text{total}}} = \frac{1}{R_1} + \frac{1}{R_n} \) or \( R_{\text{total}} = \frac{R_n \cdot R_m}{R_n + R_m} \)</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>        
+    </body>
+</html>

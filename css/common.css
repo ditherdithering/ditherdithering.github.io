@@ -18,21 +18,23 @@
     border-radius: 15px;
 }
 body, h1 {
-    text-align: center;
-    color: white;
+    text-align: left;
 }
-a, a:link, a:visited {
-    color: white;
+a {
+    margin-left: 1.5em;
+}
+a:link, a:visited {
+    color: red;
 }
 
 h1 {
     margin-top: 0;
-    color: white;
 
 }
 
 ul, li {
     list-style-position: inside;
+    margin-left: 1.5em;
 }
 
 ul {
