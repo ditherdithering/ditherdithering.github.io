@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/common.css">
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <a href="../index.html">Return back</a>
+        <h4>Definitions</h4>
+        <p>
+          Let \( \theta \) be the angle in standard position of the unit circle and \( P(x, y) \) be the point of the intersection of the terminal side of \( \theta \) and the unit circle.
+        </p>
+        <ul>
+          <li>Let the sine function as \( \sin \theta = y \)</li>
+          <li>Let \( \sin f(y) \to \sin \theta = y \)</li>
+          <li>Let \( \cos f(x) \to \cos \theta = x \)</li>
+          <li>Let \( f(\tan) \to \tan \theta = \frac{y}{x}, y \neq 0 \)</li>
+          <li>Let \( f(\cot) \to \cot \theta = \frac{x}{y}, x \neq 0 \)</li>
+          <li>Let \( f(\sec) \to \sec \theta = \frac{1}{x}, x \neq 0 \)</li>
+          <li>Let \( f(\csc) \to \csc \theta = \frac{1}{y}, y \neq 0 \)</li>
+        </ul>
+        
+        <h4>Signs of the 6CF</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Positive on Quadrant</th>
+              <th>Negative on Quadrant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>\( \sin \theta \) and \( \csc \theta \)</td>
+              <td>I & II</td>
+              <td>III & IV</td>
+            </tr>
+            <tr>
+              <td>\( \cos \theta \) and \( \sec \theta \)</td>
+              <td>I & IV</td>
+              <td>II & III</td>
+            </tr>
+            <tr>
+              <td>\( \tan \theta \) and \( \cot \theta \)</td>
+              <td>I & III</td>
+              <td>II & IV</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h4>Graphing sin & cos</h4>
+        <ul>
+          <li><b>Cycle:</b> One complete repetition of the pattern.</li>
+          <li><b>Periodic Function:</b> A wavelike function that repeats a pattern at regular intervals.</li>
+        </ul>
+        <p><b>Amplitude:</b> Vertical distance between the graph and the x-axis.</p>
+        <p><b>Period:</b> X interval required to complete one cycle of a function.</p>
+        
+        <h5>Cosine wave function (\( y = \cos \theta \))</h5>
+        <img src="../images/cos theta.svg" width="500" height="500">
+        <p><b>Domain:</b> \( (-\infty, \infty) \) or \( \mathbb{R} \) (open brackets, extendable).</p>
+        <p><b>Range:</b> \( [-1, 1] \) (closed brackets, restrictive).</p>
+        
+        <h5>Sine wave function (\( y = \sin \theta \))</h5>
+        <img src="../images/sin theta.svg" width="500" height="500">
+        <p><b>Domain:</b> \( (-\infty, \infty) \) or \( \mathbb{R} \) (open brackets, extendable).</p>
+        <p><b>Range:</b> \( [-1, 1] \) (closed brackets, restrictive).</p>
+        
+        <h5>Tangent wave function (\( y = \tan \theta \))</h5>
+        <img src="../images/tan theta.svg" width="500" height="500">
+        <p><b>Domain:</b> \( (-\infty, \infty) \) or \( \mathbb{R} \) (open brackets, extendable).</p>
+        <p><b>Range:</b> \( [-1, 1] \) (closed brackets, restrictive).</p>
+
+        <h5>Cosecant wave function (\( y = \csc \theta \))</h5>
+        <img src="../images/csc theta.svg" width="500" height="500">
+        <p><b>Domain:</b> \( (-\infty, \infty) \) or \( \mathbb{R} \) (open brackets, extendable).</p>
+        <p><b>Range:</b> \( [-1, 1] \) (closed brackets, restrictive).</p>
+
+        <h5>Secant wave function (\( y = \sec \theta \))</h5>
+        <img src="../images/sec theta.svg" width="500" height="500">
+        <p><b>Domain:</b> \( (-\infty, \infty) \) or \( \mathbb{R} \) (open brackets, extendable).</p>
+        <p><b>Range:</b> \( [-1, 1] \) (closed brackets, restrictive).</p>
+
+        <h5>Cotangent wave function (\( y = \cot \theta \))</h5>
+        <img src="../images/cot theta.svg" width="500" height="500">
+        <p><b>Domain:</b> \( (-\infty, \infty) \) or \( \mathbb{R} \) (open brackets, extendable).</p>
+        <p><b>Range:</b> \( [-1, 1] \) (closed brackets, restrictive).</p>
+        
+        <h5>General Equation (sin & cos)</h5>
+        <p>
+          \[
+          f(\theta) = a \sin b (\theta - h) + k
+          \]
+        </p>
+        <p>
+          \[
+          g(\theta) = a \cos b (\theta - h) + k
+          \]
+        </p>
+        <p>
+          Where \( a, b, h, k \neq 0 \) and are constants. If unknown, \( a, b = 1 \), \( h, k = 0 \).
+        </p>
+        <h6>Amplitude:</h6>
+        <p>\( |a| \)</p>
+        <h6>Range:</h6>
+        <p>Interval of \( [k \pm |a|] \)</p>
+        <h6>Period:</h6>
+        <p>
+          \[
+          p = \frac{2\pi}{|b|}
+          \]
+        </p>
+        
+        <h4>Phase Shifts of \( \sin \) and \( \cos \)</h4>
+        <ul>
+          <li>\( |h| \) shifts to the right if positive, left if negative.</li>
+          <li>\( |k| \) shifts upwards if positive, downwards if negative.</li>
+        </ul>
+        
+        <h4>Tips</h4>
+        <ul>
+          <li>Consider the two general equations of \( \sin \) and \( \cos \).</li>
+          <li>Identify the period of the function.</li>
+          <li>Consider the cycle of the interval.</li>
+          <li>Determine the circular function.</li>
+          <li>Plot the points and use them as a guide to sketch.</li>
+        </ul>
+        
+    </body>
+</html>
