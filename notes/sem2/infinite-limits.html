@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../css/common.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            window.MathJax = {
+              loader: {
+                load: ['[tex]/cancel']  // load the cancel extension
+              },
+              tex: {
+                packages: {'[+]': ['cancel']}  // enable the cancel package
+              }
+            };
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+    <body>
+        <a href="../../index.html">Return back</a>
+        <p>Let \( r \) be any \( \mathbb{N} \), then:
+            \[ \lim_{x\\to 0^+} \frac{1}{x^r} = x^+ \]
+            
+            Another one:
+            \[ \lim_{x\to 0^!} \frac{1}{x^r} = \begin{cases}
+            +\infty, \text{if } r = 2k, \text{where } k = \mathbb{N} \\
+            -\infty, \text{if } r = 2k + 1, \text{where } k = \mathbb{N}
+            \end{cases} \]</p>
+            
+            <h2 id="limits-at-infinity">Limits at Infinity</h2>
+            <p>Should the situation call for it, grab the value from the asymptotes.</p>
+            
+            <h3 id="factoring-limits-at-infinity">Factoring Limits at Infinity</h3>
+            <p>Format, for fractions:
+            \[ \lim_{x\to\infty} \frac{2x+3}{4 - x} = \frac{x(2+\frac{3}{x})}{x(\frac{4}{x} - 1)} \]</p>
+        <h1 id="limits-where-x-equals-infinity">Limits where x = infinity</h1>
+        <h2 id="a">a</h2>
+        <p>\[
+        \lim\hspace{0.3em}{x\to \infty}\frac{2x + 3}{4 - x} = \frac{2x + 3 (\frac{1}{x})}{4 - x (\frac{1}{x})} = \frac{\cancel{\frac{2x}{x}} + \frac{3}{x}}{\frac{4}{x} - \cancel{\frac{x}{x}}}
+        \]
+        \[
+        \lim\hspace{0.3em}{x\to \infty}\frac{2x + 3}{4 - x}
+        \]</p>
+
+        <h2 id="example-1-and-2">example 1 and 2</h2>
+        <p>\[
+        x = \begin{cases} 
+        -\sqrt{x^2}, x < 0 \\
+        \sqrt{x^2}, x > 0
+        \end{cases}
+        \]
+        \[
+        \lim_{x\to -\infty} \frac{3x+4}{\sqrt{2x^2 - 5}} = \frac{\frac{3x+4}{x}}{\frac{\sqrt{2x^{2}} - \sqrt{5}}{x^2}} = (\text{factoring}) \frac{x(3+\frac{4}{x})}{\sqrt[\cancel2]{x^{\cancel2}}(2 - \frac{5}{x})}
+        \]</p>
+
+        <h2 id="example-3">example 3</h2>
+        <p>\[
+        \lim_{x\to+\infty}\frac{x^7 + 10x}{x^7} = \frac{x^7 + 10x}{x^7} \cdot \frac{\frac{1}{x^7}}{\frac{1}{x^7}} = \frac{\frac{\cancel{x^7}}{\cancel{x^7}} + \frac{10\cancel{x}}{x^{7 - 1}}}{\cancel{\frac{x^7}{x^7}}} = \frac{1 + \frac{10}{x^6}}{1} \frac{1 + 0}{1} = 1
+        \]</p>
+
+        <h2 id="example-4">example 4</h2>
+        <p>\[
+        \lim\hspace{0.3em}{x\to-\infty}\frac{-4x^8 + x^3 - x + 7}{x^4} = \frac{-4x^8 + x^3 - x + 7}{x^4} \cdot \frac{(\frac{1}{x^4})}{(\frac{1}{x^4})} = \frac{\frac{-4x^8}{x^4} + \frac{x^3}{x^4} - \frac{x}{x^4} + \frac{7}{x^4}}{\cancel{\frac{x^4}{x^4}}}
+        \]
+        \[
+        \lim\hspace{0.3em}{x\to-\infty} = -4x^4 + \frac{1}{x} - \frac{1}{x^3} + \frac{7}{x^4} = -4x^4 + 0 - 0 + 0 = -4(-\infty)^4 = -4(\infty) = -\infty
+        \]</p>
+
+        <h2 id="example-5">example 5</h2>
+        <p>\[
+        \lim\hspace{0.3em}{x\to+\infty} = \frac{3x^2 + 2x - 1}{3x^3 - 5x + 2} = \frac{3x^2 + 2x - 1}{3x^3 - 5x + 2} \cdot \frac{(\frac{1}{x^3})}{(\frac{1}{x^3})} = \frac{\frac{3x^2}{x^3} + \frac{2x}{x^3} - \frac{1}{x^3}}{\frac{3x^3}{x^3} - \frac{5x}{x^3} + \frac{2}{x^3}} = \frac{\frac{3}{x} + \frac{2}{x^2} - \frac{1}{x^3}}{3 - \frac{5}{x^2} + \frac{2}{x^3}} = \frac{0 + 0 - 0}{3 - 0 + 0} = \frac{0}{3}
+        \]
+        \[
+        \lim\hspace{0.3em}{x\to+\infty} = 0
+        \]</p>
+
+        <h2 id="example-6">example 6</h2>
+        <p>\[
+        \lim\hspace{0.3em}{x\to-\infty} = x^3 - x^2 - 2x = x^3(1 - \frac{1}{x} - \frac{2}{x^2}) = \lim\hspace{0.3em}{x\to-\infty}x^3 \cdot \lim_{x\to-\infty} (1 - 0 - 0) = x^3(1) = -\infty(1) = -\infty
+        \]</p>
+
+        <h2 id="example-7">example 7</h2>
+        <p>\[
+        \lim\hspace{0.3em}{x\to-\infty} \frac{x^2 + 4x + 1}{2x + 7} = \frac{x^2 + 4x + 1}{2x + 7} \cdot \frac{(\frac{1}{x})}{(\frac{1}{x})} = \frac{\frac{x^2}{x} + \frac{4x}{x} + \frac{1}{x}}{\frac{2x}{x} + \frac{7}{x}} = \frac{x + 4 + 0}{2 + 0} = \frac{x + 4}{2} = \frac{-\infty + 4}{2} = \frac{-\infty}{2}
+        \]
+        \[
+        \lim\hspace{0.3em}{x\to-\infty} \frac{-\infty}{2} = -\infty
+        \]</p>
+
+        <h2 id="example-8">example 8</h2>
+        <p>\[
+        \lim_{x\to+\infty}\frac{9x^2}{x+2} = \frac{9x^2}{x+2} \cdot \frac{(\frac{1}{x})}{(\frac{1}{x})} = \frac{\frac{9x^2}{x}}{\frac{x}{x} + \frac{2}{x}} = \frac{9x}{1 + 0}
+        \]</p>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../css/common.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            window.MathJax = {
+              loader: {
+                load: ['[tex]/cancel']  // load the cancel extension
+              },
+              tex: {
+                packages: {'[+]': ['cancel']}  // enable the cancel package
+              }
+            };
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    </head>
+    <body>
+        <a href="../../index.html">Return back</a>
+        <p>Should \(\frac{\sin n}{n}\), then = 1. Should \(\frac{1 - \cos n}{n}\), then = 0.</p>
+        <h1 id="trigonometric-limits-examples">Trigonometric Limits Examples</h1>        
+        <h2 id="a">a</h2>
+        <p>\[
+        \lim_{x\to\frac{\pi}{6}} \frac{2 \sin x}{\sqrt3 \sec x - \cot^2 x}
+        \]</p>
+
+        <h2 id="b">b</h2>
+        <p>\[
+        \lim_{x\to 0} \frac{\sin 3x}{\sin 5x} = \frac{\lim_{x\to 0} 3\left(\frac{\sin 3x}{3x}\right)}{\lim_{x\to 0} 5\left(\frac{\sin 5x}{5x}\right)} = \frac{3\lim_{x\to 0} \left(\frac{\sin 3x}{3x}\right)}{5\lim_{x\to 0} \left(\frac{\sin 5x}{5x}\right)} = \frac{(3)(1)}{(5)(1)} = \frac{3}{5}
+        \]</p>
+
+        <h2 id="c">c</h2>
+        <p>\[
+        \lim_{x\to 0}\frac{\cos x - 1}{2 \sin x} = \frac{-(1 - \cos x)}{2 \sin x} = \frac{\frac{- 1 + \cos x}{x}}{\frac{2 \sin x}{x}} = \frac{\lim_{x\to 0} \frac{- 1 + \cos x}{x}}{\lim_{x\to 0} \frac{2 \sin x}{x}} = \frac{0}{2 \lim_{x\to 0} \frac{\sin x}{x}} = \frac{0}{2(1)} = 0
+        \]</p>
+    </body>
+</html>
